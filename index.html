@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Personal - One Piece</title>
+    <!-- Importar la fuente "Poppins" desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000; /* Fondo negro */
+            color: #fff; /* Texto blanco */
+            font-family: 'Poppins', sans-serif; /* Fuente moderna */
+        }
+
+        .header {
+            background-color: #f0c14b;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            font-weight: 600;
+        }
+
+        .about {
+            margin-top: 20px;
+        }
+
+        .characters-list ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .characters-list ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #444;
+        }
+
+        .characters-list h3 {
+            margin-top: 20px;
+            color: #f0c14b;
+        }
+
+        .form-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #222; /* Fondo gris oscuro */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+
+        .form-section input, .form-section textarea {
+            background-color: #333; /* Fondo gris más claro */
+            color: #fff;
+            border: 1px solid #555;
+            margin-bottom: 15px;
+        }
+
+        .form-section input::placeholder, .form-section textarea::placeholder {
+            color: #bbb;
+        }
+
+        .form-section button {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Estilos adicionales para mejorar el look */
+        h2, h3 {
+            color: #f0c14b;
+        }
+
+        p, ul, li, form {
+            font-weight: 300;
+        }
+
+        .container img {
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header class="header">
+        <h1>One Piece - ワンピース</h1>
+    </header>
+
+    <!-- Sección de imagen -->
+    <div class="container my-5">
+        <div class="text-center">
+            <img src="https://codigoespagueti.com/wp-content/uploads/2022/06/One-Piece-celebra-el-Dia-Mundial-de-los-Mugiwara-la-tripulacion-de-Luffy-este-13-de-junio.jpg" class="img-fluid" alt="One Piece Poster">
+        </div>
+    </div>
+
+    <!-- Sección de descripción -->
+    <div class="container about">
+        <h2>¿Qué es One Piece?</h2>
+        <p>One Piece es una serie de manga y anime escrita por Eiichiro Oda. Narra las aventuras de Monkey D. Luffy y su tripulación de piratas, quienes buscan el legendario tesoro conocido como 'One Piece'.</p>
+        <p>La historia está llena de acción, humor y momentos emotivos, destacando valores como la amistad, la libertad y el coraje. Luffy, el protagonista, tiene el poder de estirarse como goma después de haber comido una fruta del diablo.</p>
+    </div>
+
+    <!-- Sección de lista de personajes -->
+    <div class="container characters-list">
+        <h3>Personajes Principales</h3>
+        <ul>
+            <li>Monkey D. Luffy - Capitán</li>
+            <li>Roronoa Zoro - Espadachín</li>
+            <li>Nami - Navegante</li>
+            <li>Usopp - Tirador</li>
+            <li>Sanji - Cocinero</li>
+            <li>Tony Tony Chopper - Médico</li>
+            <li>Franky - Ingeniero</li>
+        </ul>
+    </div>
+
+    <!-- Sección del formulario -->
+    <div class="container form-section">
+        <h3>Envíanos tus comentarios o preguntas sobre One Piece</h3>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" placeholder="Escribe tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Escribe tu correo electrónico">
+            </div>
+            <div class="mb-3">
+                <label for="comments" class="form-label">Comentario</label>
+                <textarea class="form-control" id="comments" rows="4" placeholder="Escribe tu comentario..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
